@@ -51,10 +51,8 @@ models/
 *.joblib
 
 # Local datasets and generated data
-data/raw/
-data/interim/
-data/processed/
-data/external/
+/data/*
+!/data/.gitkeep
 *.parquet
 *.feather
 *.h5
