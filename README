@@ -156,3 +156,15 @@ main.bicep
 ```
 
 Everything in this tree is what you'd reasonably put in Bicep — stable infrastructure that doesn't change per experiment.
+
+
+Differenbce betwee this and the accelerator for ML v2:
+
+- The Accelerator is still the go to solution for production scenario
+However, it carries a lot of scenarios (and rightkly so) while most scenarios for instance do not use SQL or Cosmos DB or Synapese (retired)
+- It also assumes that roles such as infra, data engineering, ML engineer and data scientist are separate while these days they tend to be one person's concerns.
+- It's not geared towards a starter kit to get up to speed with a project while also limiting the work required to move a PoC or small project to production ready (its basically the whole thing at once but most people would want to have a taste of this at smaller scale before committing to a full deployment)
+
+- Also ADO sucks everyone uses GH 
+
+If the accelerator is a bazooka this repo is a AK 47. deadly can be used in most situations short range, medium and long.

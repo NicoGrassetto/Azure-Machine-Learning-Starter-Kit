@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName":          { "value": "${AZURE_ENV_NAME}" },
+    "location":                 { "value": "${AZURE_LOCATION}" },
+    "workspaceFriendlyName":    { "value": "${AZUREML_WORKSPACE_FRIENDLY_NAME}" },
+    "workspaceDescription":     { "value": "${AZUREML_WORKSPACE_DESCRIPTION}" },
+    "storageSkuName":           { "value": "${AZUREML_STORAGE_SKU}" },
+    "keyVaultSkuName":          { "value": "${AZUREML_KEYVAULT_SKU}" },
+    "deployContainerRegistry":  { "value": "${AZUREML_DEPLOY_ACR}" },
+    "containerRegistrySku":     { "value": "${AZUREML_ACR_SKU}" },
+    "hbiWorkspace":             { "value": "${AZUREML_HBI_WORKSPACE}" },
+    "publicNetworkAccess":      { "value": "${AZUREML_PUBLIC_NETWORK_ACCESS}" },
+    "ownerTag":                 { "value": "${AZUREML_OWNER_TAG}" }
+  }
+}
